@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Mask Detection</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        img {
+            border: 5px solid white;
+            border-radius: 10px;
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Face Mask Detection using YOLOv8</h1>
+    <img src="{{ url_for('video_feed') }}" alt="Video Feed">
+</body>
+</html>
